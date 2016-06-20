@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*Header*/
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li {
 color: #777;
 text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color: #f74d65;
+	color:  #24248f;
 }
 
 .icons{
@@ -75,7 +75,7 @@ header{
 }
 .single_service i{
 	font-size: 25px;
-	color: #f73b56;
+	color: #24248f;
 }
 .single_service h2{
 	color: #000000;
@@ -200,7 +200,7 @@ padding-bottom: 30px;
 padding-top: 20px;	
 }
 .single_count i{
-	color: #f73b56;
+	color: #24248f;
 	font-size: 24px;
 }
 .single_count h3{
