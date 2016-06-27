@@ -1,0 +1,47 @@
+{% block content %}
+ {%  include 'base.html' %}
+  {%  include 'nav.html' %}
+    {%  include 'Javascript-stuff.js' %}
+    <div class="container">
+	                <div class="row">
+	                    <div class="col-md-12 text-center" >
+	                        <div class="home_text_calc">
+	                            <h1>Start your will now.. </h1>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+				
+				<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">STEP 1: Type</a></li>
+  <li><a data-toggle="tab" href="#menu1">STEP 2: Suitabilitiy</a></li>
+  <li><a data-toggle="tab" href="#menu2">STEP 3: The form</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>				<form>
+  <input type="radio" name="type" value="male" checked> The will is just for me:<br>
+  <input type="radio" name="type" value="female"> The will is for myself and my partner: <br>
+  <button onclick="submitType()">Click me</button>
+</form></p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Suitability</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>The form</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+
+	<script>
+function submitType() {
+   
+}
+</script>			
+
+
+{% endblock %}

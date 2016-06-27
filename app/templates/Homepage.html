@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Telford &CO </title>
-    <!-- Fontz -->
-    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,1000' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- Fontz -->
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-     <!-- Preloader -->
-    <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
-    <!-- css for theme and carousel tings-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../static/css/owl.carousel.css">
-    <link rel="stylesheet" href="../static/css/owl.theme.default.css">
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="../static/css/animate.css">
-    <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Style -->
-    <link href="../static/css/style.css" rel="stylesheet">
-    <!-- Responsive CSS -->
-    <link href="../static/css/responsive.css" rel="stylesheet">
-
-        <script src="js/lte-ie7.js"></script>
-	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-</head>
-
+  {%  include 'base.html' %}
+ {%  include 'nav.html' %}
+  </head>
 <body>
 
 
@@ -41,30 +17,7 @@
 ==============================-->
     <header id="HOME" style="background-position: 10%, -125px;">
 	        <div class="section_overlay">
-	            <nav class="navbar navbar-default navbar-fixed-top">
-	              <div class="container">	               
-	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                  </button>
-	                </div>
-	              
-	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					   <ul class="nav navbar-nav navbar-Left">
-	                    <li><b>Contact</b> 01752 -------</li>
-					
-	                  </ul>
-	                  <ul class="nav navbar-nav navbar-right">
-	                    <li><a href="#HOME">Home</a></li>
-						<li><a href="#ABOUT">About</a></li>
-	                    <li><a href="#SERVICE">Calulators</a></li>
-	                  </ul>
-	                </div>
-	              </div>
-	            </nav>
+	
 <!--=====================
 	Title
 =======================-->
@@ -115,14 +68,14 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="single_service wow fadeInUp" data-wow-delay="2s">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                        <h2>Advisor</h2>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                        <h2>Financial Advisor</h2>
 
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="single_service wow fadeInUp" data-wow-delay="3s">
-                  <i class="fa fa-android" aria-hidden="true"></i>
+                  <i class="fa fa-umbrella" aria-hidden="true"></i>
                         <h2>Life Insurance</h2>
 
                     </div>
@@ -165,7 +118,7 @@ Gap to show background pic
         <div class="container">
 		 <div class="work_title  wow fadeInUp animated text-center">
                         <h1 style="text-align:center;">Technical Skills</h1>
-                      <img src="../static/images/shape.png"  alt="">
+                        <img src="../static/images/zigzag.png" alt="">
                          </div>
 		        <div class="container-exp">
 		            <div class="row icons">
@@ -186,30 +139,7 @@ Gap to show background pic
 
                 </div>
 
-                         <div class="col-md-4  wow fadeInLeft animated"style="text-align:center; color: #f73b56;">
-
-
-                        <p>C#, Java, PHP, Python, Powershell</p>
-                        <p>Flask, Slim</p>
-                        <p>JavaScript, XML, JSON, HTML/HTML5, CSS/CSS3</p>
-
-              </div>
-                <div class="col-md-4  wow fadeInRight animated" style="text-align:center;color: #f73b56;">
-
-
-                        <p>Agile, Scrum</p>
-                            <p>Git </p>
-
-                        <p>OOA/OOD (Design Patterns, UML) </p>
-
-                </div>
-                <div class="col-md-4  wow fadeInRight animated" style="text-align:center;color: #f73b56;">
-
-                        <p>MySQL, PostgreSQL</p>
-
-                        <p>Stored Procedures, Triggers, Normalization</p>
-
-            </div>
+   
           <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="work_title  wow fadeInUp animated">
@@ -221,49 +151,8 @@ Gap to show background pic
             </div>
 			 
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 wow fadeInLeft animated no_padding">
-                    <div class="single_image">
-                        <img class="work" src="../static/images/api-php.png" alt="">
-                        <div class="image_overlay">
-                            <a href="">View Projects</a>
-                            <h2>PHP Work</h2>
-                           <h4></h4> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 no_padding wow fadeInUp animated">
-                    <div class="single_image">
-                        <img class="work" src="../static/images/design.png" alt="">
-                        <div class="image_overlay">
-                            <a href="">View Projects</a>
-                            <h2>Website Design</h2>
-                           <h4></h4> 
-                        </div>
-                    </div>
-                </div>
-               <div class="col-md-3 no_padding wow fadeInRight animated">
-                    <div class="single_image">
-                        <img class="work" src="../static/images/android.jpg" alt="">
-                        <div class="image_overlay">
-                            <a href="">View Projects</a>
-                            <h2>Android Applications</h2>
-                           <h4></h4> 
-                        </div>
-                    </div>
-                </div>
-				 <div class="col-md-3 no_padding wow fadeInRight animated">
-                    <div class="single_image">
-                        <img class="work" src="../static/images/python.png" alt="">
-                        <div class="image_overlay">
-                            <a href="">View Projects</a>
-                            <h2>Python Work</h2>
-                           <h4></h4> 
-                        </div>
-                    </div>
-                </div>
-        </div>
+      
+
     </section>
 	</br>
 <!--=====================
@@ -274,7 +163,7 @@ Gap to show background pic
             <div class="row">
                 <div class="col-md-8 wow fadeInLeft animated">
                     <div class="left">
-                        <h2>LOOKING FOR A SOFTWARE DEVELOPER?</h2>
+                        <h2>Do you need a Will to ensure your wishes are carried out?</h2>
                     </div>
                 </div>
                 <div class="col-md-3 col-md-offset-1 wow fadeInRight animated">
@@ -294,7 +183,7 @@ Gap to show background pic
                     <div class="contact_title  wow fadeInUp animated">
                         <h1>get in touch</h1>
                           <img src="../static/images/shape.png" alt="">
-                        <p>I take pride in my work and thrive in an environment presenting new challenges.<br/> Thank you in advance for your time and consideration.</p>
+                        <p>We have appointments available both during the day and on an evening as we are aware that you have to work too. Providing a friendly and professional service<br/>we will provide you with the best advice for your personal circumstances to ensure that your wishes are carried out.</p>
                     </div>
                 </div>
             </div>
