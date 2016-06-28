@@ -16,9 +16,16 @@ h1, h2, h3, h4, h5, h6{
 .navbar-default .navbar-nav>li {
 color: #777;
 text-transform: uppercase;
+font-size: 16px;
 }
+
 .navbar-default .navbar-nav>li>a:hover{
 	color:  #24248f;
+}
+
+.navbar-left{
+	margin-top:10px!important;
+	
 }
 
 .icons{
@@ -29,7 +36,7 @@ margin-bottom:-50px;
 header{
 	background: url(../images/header1.jpg);
 	margin-top: 50px;
-	background-size:  102% 80%;
+	background-size:  102% 90%;
 	background-repeat: no-repeat;
 }
 .section_overlay{
@@ -64,14 +71,11 @@ header{
 .home_text_calc{
 	padding-top: 60px;
 	padding-bottom: 40px;
-
+}
 /*Services*/
 .services{
 	padding-top: 15px;
 
-}
-.services .container{
-	border-bottom: 1px solid grey;
 }
 .single_service{
 	padding-bottom: 56px;
@@ -116,7 +120,7 @@ background-color: #2d3334;
 	font-size: 25px;
 	color: #3d3d3d;
 	text-transform: uppercase;
-	margin-top: 85px;
+	margin-top: 25px;
 	letter-spacing: 6px;
 	margin-bottom: 21px;
 }
@@ -344,8 +348,8 @@ text-transform: uppercase;
 	transition: all 1s;
 }
 .cs-btn:hover{
-	background: #f74d65;
-	border-color: #f74d65;
+	background: #24248f;
+	border-color: #24248f;
 }
 .call_to_action .container{
 	padding-bottom: 60px;
@@ -389,7 +393,7 @@ border: 0px solid #fff;
 }
 .form_submit{
 width: 100%;
-background: #f73b56;
+background: #24248f;
 border-radius: 0px;
 color: #fff;
 padding-top: 13px;
@@ -397,6 +401,15 @@ padding-bottom: 10px;
 transition: all 1s;	
 }
 
+.nav-calc{
+
+	border-color: #24248f;
+	border-bottom: 	solid 1px #24248f;
+}
+
+.nav-calc i{
+	color: white;
+}
 
 .work-with {
 padding-bottom: 60px;
@@ -408,7 +421,10 @@ padding-top: 10px;
 	text-transform: uppercase;
 }
 
-
+.page-container{
+	padding-left: 300px;
+	padding-right: 300px;
+}
 
 /*Footer*/
 footer{
@@ -450,8 +466,8 @@ line-height: 28px;
 transition: all 1s;
 }
 ul.icon_list li a:hover{
-	color: #f73b56;
-	border-color:#f73b56; 
+	color: #24248f;
+	border-color:#24248f; 
 }
 .copyright_text{
 padding-top: 80px;	
