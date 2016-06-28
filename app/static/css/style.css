@@ -20,7 +20,7 @@ font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-	color:  #24248f;
+	color:  #0066FF;
 }
 
 .navbar-left{
@@ -82,7 +82,7 @@ header{
 }
 .single_service i{
 	font-size: 25px;
-	color: #24248f;
+	color: #0066FF;
 }
 .single_service h2{
 	color: #000000;
@@ -149,7 +149,7 @@ background-color: #2d3334;
 	position: absolute;
 	width: 80px;
 	height: 80px;
-	background-color: #24248f;
+	background-color: #0066FF;
 	top: 110px;
 	left: 50%;
 	-moz-transform: rotate(45deg);
@@ -207,7 +207,7 @@ padding-bottom: 30px;
 padding-top: 20px;	
 }
 .single_count {
-	color: #24248f;
+	color: #0066FF;
 	font-size: 24px;
 }
 .single_count h3{
@@ -348,8 +348,8 @@ text-transform: uppercase;
 	transition: all 1s;
 }
 .cs-btn:hover{
-	background: #24248f;
-	border-color: #24248f;
+	background: #0066FF;
+	border-color: #0066FF;
 }
 .call_to_action .container{
 	padding-bottom: 60px;
@@ -393,7 +393,7 @@ border: 0px solid #fff;
 }
 .form_submit{
 width: 100%;
-background: #24248f;
+background: #0066FF;
 border-radius: 0px;
 color: #fff;
 padding-top: 13px;
@@ -403,8 +403,8 @@ transition: all 1s;
 
 .nav-calc{
 
-	border-color: #24248f;
-	border-bottom: 	solid 1px #24248f;
+	border-color: #0066FF;
+	border-bottom: 	solid 1px #0066FF;
 }
 
 .nav-calc i{
@@ -466,8 +466,8 @@ line-height: 28px;
 transition: all 1s;
 }
 ul.icon_list li a:hover{
-	color: #24248f;
-	border-color:#24248f; 
+	color: #0066FF;
+	border-color:#0066FF; 
 }
 .copyright_text{
 padding-top: 80px;	
