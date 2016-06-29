@@ -33,7 +33,7 @@
      
     </p>
  <p><label>Username:</label> <input type="text" name="username" ></p>
-  Last name: <input type="text" name="lastname"><br>
+  Last name: <input type="text" name="lname"><br>
   Email: <input type="text" name="email"><br>
   Address: <input type="text" name="address"><br>
 	
@@ -47,12 +47,10 @@
 
 We strongly recommend that you choose more than one person to execute your will. If you choose only one person then it will still be legal.
 More info
-    <p>				<form>
-  Add a first choice?:</p> (link to pop up here)
-  
-	
+<form method="post" action="{{ url_for('addExecutors') }}">
+   
 	  
-  <p>Add a second choice:</p> (link to pop up here)
+  <p>Add an executor:</p> 
   First name: <input type="text" name="firstname2"><br>
   Last name: <input type="text" name="lastname2"><br>
   Address: <input type="text" name="address2"><br>
@@ -64,10 +62,10 @@ More info
     <p>{{ username }} If you have any children under the age of 18, you can choose the person or people who you would like to take care of them after your death, rather than letting the State decide. More info		
 	</p>
 	Do you have any dependent children (ie under 18)?
-<form>
+<form method="post" action="{{ url_for('addGuardian') }}">
   <input type="radio" name="gender" value="no" checked> No<br>
-  <input type="radio" name="gender" value="yesno"> Yes - but I do not want to deal with guardianship in my will<br>
-  <input type="radio" name="gender" value="yes"> Yes - and I wish to appoint the following guardians, who can act either together, or if only one individual chooses to accept on his or her own:</br>
+  <input type="radio" name="gender" value="Yes - but I do not want to deal with guardianship in my will"> Yes - but I do not want to deal with guardianship in my will<br>
+  <input type="radio" name="gender" value="Yes - and I wish to appoint the following guardians, who can act either together, or if only one individual chooses to accept on his or her own"> Yes - and I wish to appoint the following guardians, who can act either together, or if only one individual chooses to accept on his or her ow:</br>
     <button onclick="submitGuards()">Continue</button>
 </form>
 
