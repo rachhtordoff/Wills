@@ -339,7 +339,7 @@ text-transform: uppercase;
 }
 .cs-btn, .cs-btn:active, .cs-btn:visited, .cs-btn:focus{
 	color: #fff;
-	background-color: #000;
+	background-color: #0066FF;
 	border-radius: 0px;
 	outline: none;
 	padding: 10px 40px;
@@ -348,8 +348,9 @@ text-transform: uppercase;
 	transition: all 1s;
 }
 .cs-btn:hover{
-	background: #0066FF;
-	border-color: #0066FF;
+	color: black;
+	background: white;
+	border-color: grey;
 }
 .call_to_action .container{
 	padding-bottom: 60px;
