@@ -1,39 +1,57 @@
 from app import app, JsonParser
 from flask import render_template, request, session,  url_for, redirect, jsonify, json
 
+
 def sumSessionCounter():
   try:
-	session['name'] = request.form['username']
+    session['counter'] += 1
   except KeyError:
-    session['name'] = 'error'
-
+    session['counter'] = 1
 
 @app.route('/')
 @app.route('/homepage')
 def homepage():
     	return render_template('Homepage.html')
 		
-@app.route('/calculator-page', methods=['GET'])
-def calculator():
+@app.route('/calculator-page', methods=['GET', 'POST'])
+def step1():
+		if request.method == 'GET':
+			return render_template ('calculator.html')
+		
+		if request.method == 'POST':
+			sumSessionCounter()
+			username = request.form['username']
+			lname = request.form['lname']
+			email = request.form['email']
+			address = request.form['address']
+			rule_new = {}
+			rule_new['username'] = username
+			rule_new['lname'] = lname
+			rule_new['email'] = email
+			rule_new['address'] = address
+			form_data = {"form1": rule_new, "form2": None, "Form3":None} 
+		return render_template ('calculator.html', session = form_data)
+	
 
-	return render_template('calculator.html')
+def step3(session):
+		if request.method == 'GET':
+			return render_template ('calculator.html')
 	
-	
-@app.route('/signup', methods=['POST'])
 def signup():
-	username = request.form['username']
-	lname = request.form['lname']
-	email = request.form['email']
-	address = request.form['address']
-	rule_new = {}
-	rule_new['username'] = username
-	rule_new['lname'] = lname
-	rule_new['email'] = email
-	rule_new['address'] = address
-	
-	return jsonify(user=rule_new)
 
-@app.route('/executors', methods=['POST'])
+		username = request.form['username']
+		lname = request.form['lname']
+		email = request.form['email']
+		address = request.form['address']
+		rule_new = {}
+		rule_new['username'] = username
+		rule_new['lname'] = lname
+		rule_new['email'] = email
+		rule_new['address'] = address
+		session['name'] = rule_new
+		return redirect(url_for('calculator2'))
+
+
 def addExecutors():	
 	exfname =  request.form['firstname2']
 	exlname = request.form['lastname2']
@@ -45,21 +63,19 @@ def addExecutors():
 	
 	return jsonify(exe=exe )
 
-@app.route('/guardians', methods=['POST'])
 def addGuardian():	
 	Guardian =  request.form['gender']
-	guard = {}
-	guard ['option'] = Guardian
-	return jsonify(guard=guard )
+	exe = {}
+	exe['Guardian'] = Guar
+	exe['lname'] = exlname
+	exe['address'] = exaddress
 	
+	return jsonify(exe=exe )
 	
-@app.route('/session')
-def session():
-    if 'username' in session:
-      username = session['username']
-    return render_template('calculator.html', username=username)
 										   
 def create_form(username, lname, email, address):
 
 
 	return rule_new
+	
+""""def validate():"""

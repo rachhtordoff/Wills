@@ -1,8 +1,86 @@
 {% block content %}
  {%  include 'base.html' %}
   {%  include 'nav.html' %}
-    {%  include 'Javascript-stuff.js' %}
+   
+       <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Will Writing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+       <style>
+	   
+	   /* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+
+/*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
+ body {
+    margin-top:30px;
+}
+.panel-heading {
+     background-color: #0066FF !important;
+}
+
+.stepwizard-step p {
+    margin-top: 0px;
+    color:#666;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    /*opacity: 1 !important;
+    filter: alpha(opacity=100) !important;*/
+}
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+    opacity:1 !important;
+    color:#bbb;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.btn-primary {
+	background-color: #0066FF; !important;
+}
+
+.double{
+ width: 400px;
+}
+	   
+	   </style>
+    </head>
+   
     <div class="page-container">
+
+
 	<div class="container">
 	                <div class="row">
 	                    <div class="col-md-12 text-center" >
@@ -12,117 +90,220 @@
 	                    </div>
 	                </div>
 	            </div>
+<div class="container">
+    <div class="stepwizard">
+        <div class="stepwizard-row setup-panel">
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
+                <p><small>Your Information</small></p>
+            </div>
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                <p><small>Executors</small></p>
+            </div>
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                <p><small>Guardians</small></p>
+            </div>
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                <p><small>Residuaries</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <form role="form">
+        <div class="panel panel-primary setup-content" id="step-1">
+            <div class="panel-heading">
+                 <h3 class="panel-title">Your Information</h3>
+            </div>
+            <div class="panel-body">
+			<div class="row">
+ 
+
+               <div class="double">
+			    <div class="col-md-3">
+                    <label class="control-label">Title</label>
+                     <div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Select Title
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Mr</a></li>
+      <li><a href="#">Miss</a></li>
+      <li><a href="#">Mrs</a></li>
+	   <li><a href="#">Dr</a></li>
+    </ul>
+  </div>
+  
+</div>
+ </div>
+
+ 
+			    
+				
+				
+                
+						
+			
+				    <div class="col-md-4">
+                    <label class="control-label">First name</label>
+                    <input maxlength="100" type="text" required="required" class="form-control" id="firstname" placeholder="Enter First Name" />
+                </div>
+				
+              
+								  <div class="col-md-4">
+
+                    <label class="control-label">Last name</label>
+                    <input maxlength="100" type="text" required="required" class="form-control" id="lastname" placeholder="Enter Last Name" />
+                </div>
+			
+				</div>
+				</br>
+					  <div class="row">
+								  
+                 <div class="col-md-3">
+					
+					    <label class="control-label">Date of birth</label>
+                    <input maxlength="50" type="text" required="required" class="form-control" id="dob" placeholder="Enter First Name" />
+               </div>
+							  <div class="col-md-4">
+                    <label class="control-label">Phone number</label>
+                    <input maxlength="50" type="text" required="required" class="form-control" id="phoneno" placeholder="Enter First Name" />
+              </div>
+			  
+			    <div class="col-md-4">
+                    <label class="control-label">Email</label>
+                    <input maxlength="100" type="text" required="required" class="form-control" id="email" placeholder="Enter First Name" />
+                </div>
+				</div>
 		
-				<ul class="nav nav-tabs nav-calc">
-  <li class="active"><a data-toggle="tab" href="#menu1">STEP 1: Your Details <i class="fa fa-check" ></i></a></li>
-  <li><a data-toggle="tab" href="#menu2">STEP 2: Executors  <i class="fa fa-check" ></i></a></li>
-  <li><a data-toggle="tab" href="#menu3">STEP 3: Guardians <i class="fa fa-check" ></i></a></li>
-   <li><a data-toggle="tab" href="#menu4">STEP 4: Residuaries <i class="fa fa-check" ></i></a></li>
-    <li><a data-toggle="tab" href="#menu5">STEP 5: Gifts <i class="fa fa-check" ></i></a></li>
-	<li><a data-toggle="tab" href="#menu6">STEP 6: Funerary Wishes <i class="fa fa-check" ></i></a></li>
-	<li><a data-toggle="tab" href="#menu7">STEP 7: Summary </a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="menu1" class="tab-pane fade in active">
-    <h3>Your details</h3>
-	
-    <p>			<form method="post" action="{{ url_for('signup') }}">
-
-    <p>
-     
-    </p>
- <p><label>Username:</label> <input type="text" name="username" ></p>
-  Last name: <input type="text" name="lname"><br>
-  Email: <input type="text" name="email"><br>
-  Address: <input type="text" name="address"><br>
-	
-  <button type="submit" onclick="submitDetails()">Continue</button>
-</form>
-</p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <h3>Executors</h3>
-	{{ username }} Please Choose 1 or more people who you really trust to carry out the wishes in your will.</br>
-
-We strongly recommend that you choose more than one person to execute your will. If you choose only one person then it will still be legal.
-More info
-<form method="post" action="{{ url_for('addExecutors') }}">
-   
-	  
-  <p>Add an executor:</p> 
-  First name: <input type="text" name="firstname2"><br>
-  Last name: <input type="text" name="lastname2"><br>
-  Address: <input type="text" name="address2"><br>
-  <button onclick="submitEx()">Continue</button>
-</form></p></p>
-  </div>
-  <div id="menu3" class="tab-pane fade">
-    <h3>Guardians</h3>
-    <p>{{ username }} If you have any children under the age of 18, you can choose the person or people who you would like to take care of them after your death, rather than letting the State decide. More info		
-	</p>
-	Do you have any dependent children (ie under 18)?
-<form method="post" action="{{ url_for('addGuardian') }}">
-  <input type="radio" name="gender" value="no" checked> No<br>
-  <input type="radio" name="gender" value="Yes - but I do not want to deal with guardianship in my will"> Yes - but I do not want to deal with guardianship in my will<br>
-  <input type="radio" name="gender" value="Yes - and I wish to appoint the following guardians, who can act either together, or if only one individual chooses to accept on his or her own"> Yes - and I wish to appoint the following guardians, who can act either together, or if only one individual chooses to accept on his or her ow:</br>
-    <button onclick="submitGuards()">Continue</button>
-</form>
-
-  </div>
-    <div id="menu4" class="tab-pane fade">
-    <h3>Residuaries</h3>
- {{ username }} Your residuary estate covers all money or possessions left over when specific gifts have been distributed and all other expenses (fees, debts etc) have been settled.<br>
-
-Residuary beneficiaries are often your children, and can also receive specific gifts (legacies).<br>
-
-No residuary beneficiaries have been added. Add one now(link) or specify a charity(link) to leave the remains of your estate to.</p></p>
-  </div>
-    <div id="menu5" class="tab-pane fade">
-    <h3>Gifts</h3>
-    <p>{{ username }} If there any specific gifts that you would like to make from your estate, select the kind of gift below More info<p>				
-	
-	(links to add)<br>
-	Money<br>
-Shares in a company<br>
-Life insurance<br>
-House/Flat/Other Land<br>
-The right to live in a property<br>
-Some other item<br>
-
-<h3>Sumary of gifts (Only to appear when one is added)</h3>
-  <button onclick="submitGift()">Continue</button>
-</form></p></p>
-  </div>
-    <div id="menu6" class="tab-pane fade">
-    <h3>Your Funeral</h3>
-    <p>{{ username }} You may have a preference about how your remains will be treated after you die. If you do, please choose what you would wish for here. If you have any specific wishes, please detail them here.
-
-<p>				<form>
-   <input type="radio" name="gender" value="non" checked> No Preference<br>
-  <input type="radio" name="gender" value="burial"> Burial<br>
-  <input type="radio" name="gender" value="crem"> Cremation
-  <button onclick="submitFunary()">Continue</button>
-</form></p></p>
-  </div>
-     <div id="menu7" class="tab-pane fade">
-    <h3>Summary</h3>
-    <p>{{ username }} Please find a summary of your new will below.<p>				</p></p>
-  </div>
+                <button class="btn btn-primary nextBtn pull-right" type="button" id="button1">Next</button>
+            </div>
+        </div>
+        
+        <div class="panel panel-primary setup-content" id="step-2">
+            <div class="panel-heading">
+                 <h3 class="panel-title">Destination</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="control-label">Company Name</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Company Address</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                </div>
+                <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+            </div>
+        </div>
+        
+        <div class="panel panel-primary setup-content" id="step-3">
+            <div class="panel-heading">
+                 <h3 class="panel-title">Schedule</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="control-label">Company Name</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Company Address</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                </div>
+                <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+            </div>
+        </div>
+        
+        <div class="panel panel-primary setup-content" id="step-4">
+            <div class="panel-heading">
+                 <h3 class="panel-title">Cargo</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="control-label">Company Name</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Company Address</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                </div>
+                <button class="btn btn-success pull-right" id="buttonfinal" type="submit">Finish!</button>
+            </div>
+        </div>
+    </form>
 </div>
-</div>
-	<script>
-function submitDetails() {
-   
-}
-function submitEx() {
-   
-}
-function submitGuards() {
-   
-}
-</script>			
+<p id ="test">data<p>
+			
 
+        </div>
+
+</div>
+
+<script>  
+$(document).ready(function () {
+
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn');
+
+    allWells.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-success').addClass('btn-default');
+            $item.addClass('btn-success');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('div.setup-panel div a.btn-success').trigger('click');
+});
+
+
+
+var mydata = {firstName:"", lastName:""};
+var executions = {};
+
+document.getElementById("buttonfinal").onclick = function() {SaveData()};
+
+function SaveData() {
+	var firstname = (document.getElementById('firstname').value)
+	var lastname = (document.getElementById('lastname').value)
+	mydata.firstName += firstname;
+	mydata.lastName += lastname;
+    document.getElementById("test").innerHTML = mydata.firstName + mydata.lastName;
+}
+
+
+
+
+
+</script>
 
 
 

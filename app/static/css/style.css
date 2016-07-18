@@ -28,6 +28,11 @@ font-size: 16px;
 	
 }
 
+.navbar-default{
+	border-bottom: 1px solid grey;
+	
+}
+
 .icons{
 margin-bottom:-50px;	
 	
