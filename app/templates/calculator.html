@@ -8,6 +8,10 @@
         <title>Will Writing</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+		 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
        <style>
 	   
 	   /* Latest compiled and minified CSS included as External Resource*/
@@ -164,16 +168,16 @@
                  <div class="col-md-3">
 					
 					    <label class="control-label">Date of birth</label>
-                    <input maxlength="50" type="text" required="required" class="form-control" id="dob" placeholder="Enter First Name" />
+           <input type="text" id="datepicker">
                </div>
 							  <div class="col-md-4">
                     <label class="control-label">Phone number</label>
-                    <input maxlength="50" type="text" required="required" class="form-control" id="phoneno" placeholder="Enter First Name" />
+                    <input maxlength="50" type="text" required="required" class="form-control" id="phoneno" placeholder="Enter Phone Number" />
               </div>
 			  
 			    <div class="col-md-4">
                     <label class="control-label">Email</label>
-                    <input maxlength="100" type="text" required="required" class="form-control" id="email" placeholder="Enter First Name" />
+                    <input maxlength="100" type="text" required="required" class="form-control" id="email" placeholder="Enter Email Address" />
                 </div>
 				</div>
 		
@@ -304,6 +308,12 @@ function SaveData() {
 
 
 </script>
+
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 
 
 
